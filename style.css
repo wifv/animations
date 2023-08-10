@@ -1,0 +1,128 @@
+body {
+  background-color: #252525;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+span {
+  animation: flow 2s linear infinite;
+  background: linear-gradient(60deg, #0841fd, #00ff15);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+@keyframes flow {
+    0% {top: 100px;}
+    50% {top: 0px;}
+    100% {top: 100px;}
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* // */
+
+.animation {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: red;
+    animation: to-round 1.7s ease-out infinite;
+}
+
+@keyframes to-round {
+    0% {border-radius: 50%; rotate: 0deg;}
+    50% {border-radius: 0; rotate: -180deg;}
+    100% {border-radius: 50%;}
+}
+
+/* // */
+
+.triangle {
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    background:rgb(238, 255, 0);
+    right: 50px;
+    top: 50px;
+}
+
+.triangle-2 {
+    position:absolute;
+    width:150px;
+    height:150px;
+    right:50%;
+    top:50%;
+    background:#F00;
+    animation: lol 3s ease-in-out infinite;
+}
+
+@keyframes lol {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 50% 0%);
+        transform: rotate(360deg);
+    }
+
+    75% {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%, 50% 0%);
+    }
+    
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+.triangle-3 {
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    right: 50px;
+    top: 50px;
+    border-radius: 50%; 
+    background:rgb(238, 255, 0);
+    animation: lol 3s ease-in-out infinite;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    right: 50px;
+    top: 50px;
+    background:rgb(238, 255, 0);
+    border-radius: 50%;
+    animation: pizza 3s ease-in-out infinite;
+}
+
+
+@keyframes pizza {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+    50% {
+        clip-path: polygon(47% 49%, 34% 0, 63% 0, 47% 50%, 76% 1%, 100% 25%, 47% 50%, 100% 38%, 100% 61%, 47% 50%, 100% 70%, 86% 91%, 47% 50%, 71% 96%, 41% 99%, 47% 49%, 29% 98%, 7% 82%, 47% 50%, 0% 66%, 0% 39%, 48% 49%, 47% 50%, 0% 21%, 18% 3%);
+        transform: rotate(180deg);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+}
