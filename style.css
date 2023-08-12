@@ -92,18 +92,7 @@ span {
     }
 }
 
-.triangle-3 {
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    right: 50px;
-    top: 50px;
-    border-radius: 50%; 
-    background:rgb(238, 255, 0);
-    animation: lol 3s ease-in-out infinite;
-}
-
-.square {
+.pizza-smth {
     width: 150px;
     height: 150px;
     right: 50px;
